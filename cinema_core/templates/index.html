@@ -198,7 +198,6 @@
         seatsByRow[row]
           .sort((a, b) => a.number - b.number)
           .forEach(seat => {
-            // Добавим проход после 4-го места
             if (seat.number === 5) {
               const spacer = document.createElement('div');
               spacer.className = 'spacer';
